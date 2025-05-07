@@ -88,3 +88,18 @@
 
 
 }
+
+@media screen and (max-width: 390px) {
+    .logo__imagem {
+        width: 50px;
+    }
+
+    .cabecalho__nav_list_input {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .cabecalho__nav_list_link {
+        display: none;
+    }
+}

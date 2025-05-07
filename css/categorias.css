@@ -1,0 +1,107 @@
+.categorias__lista {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    'roupas roupas decoracao'
+    'canecas acessorios acessorios';
+    gap: 24px;
+    list-style-type: none;
+}
+
+.categorias__lista_item-roupas {
+    grid-area: roupas;
+}
+
+.categorias__lista_item-decoracao {
+    grid-area: decoracao;
+}
+
+.categorias__lista_item-canecas {
+    grid-area: canecas;
+}
+
+.categorias__lista_item-acessorios {
+    grid-area: acessorios;
+}
+
+.categorias__lista_item_container img {
+    height: 331px;
+    object-fit: contain;
+    width: 100%;
+}
+
+.categorias__lista_item_container {
+    background-color: var(--cor-links);
+    text-align: center;
+}
+
+.categorias__lista_item {
+    box-shadow: 0px 4px 24px 0px #7B7B7B26;
+}
+
+.categorias {
+    padding: 80px 12.5%;
+}
+
+.categorias__titulo {
+    color: var(--cor-texto-principal);
+    font-family: var(--fonte-titulo);
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+.categorias__texto {
+    color: var(--cor-texto-secundario);
+    font-size: 25px;
+    font-family: var(--fonte-texto);
+    line-height: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.categorias__lista_item_titulo {
+    align-items: center;
+    color: var(--cor-texto-principal);
+    font-size: 31px;
+    font-weight: 700;
+    font-family: var(--fonte-texto);
+    line-height: 37.2px;
+    padding: 16px 0;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 768px ) {
+    .categorias__lista {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        'roupas'
+        'decoracao'
+        'canecas'
+        'acessorios';
+    }
+}
+
+@media screen and (max-width:390px) {
+
+    .categorias__titulo {
+        margin-bottom: 30px;
+    }
+
+
+    .categorias__texto {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .categorias__lista_item_titulo {
+        font-size: 25px;
+    }
+
+}

@@ -1,0 +1,89 @@
+.promocoes__lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 26.67px;
+    list-style-type: none;
+}
+
+.promocoes {
+    padding: 32px 12.5%;
+}
+
+.promocoes__titulo {
+    color: var(--cor-texto-principal);
+    font-size: 32px;
+    font-family: var(--fonte-titulo);
+    line-height: 39px;
+    margin-bottom: 32px;
+}
+
+.promocoes__lista_item {
+    box-shadow: 0px 4px 24px 0px #7B7B7B26;
+}
+
+.promoceos__lista_item img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.promoces__lista_item_descricao {
+    color: var(--cor-texto-principal);
+    background-color: var(--cor-texto);
+    padding: 16px 24px;
+}
+
+.promoces__lista_item_descricao h4 {
+    font-size: 25px;
+    line-height: 30px;
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+}
+
+.promoces__lista_item_descricao p {
+    font-size: 31px;
+    line-height: 46.5px;
+    font-family: var(--fonte-texto);
+    margin-top: 16px;
+    font-weight: 600;
+}
+
+.promocoes__link {
+    color: var(--cor-fundo-botao);
+    font-family: var(--fonte-texto);
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: end;
+}
+
+@media screen and (max-width:768px) {
+    .promocoes {
+        padding: 19px 10.5px;
+    }
+
+    .promocoes__titulo {
+        text-align: center;
+    }
+
+    .promocoes__link {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width:390px) {
+    .promocoes__titulo {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .promoces__lista_item_descricao h4 {
+        font-size: 20px;
+    }
+
+    .promoces__lista_item_descricao p {
+        font-size: 25px;
+    }
+}

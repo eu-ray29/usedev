@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="./css/promocoes.css">
     <link rel="stylesheet" href="./css/newsletter.css">
     <link rel="stylesheet" href="./css/rodape.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/icons/logo.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
                 <ul class="cabecalho__nav_list">
                     <li>
                         <h1 class="cabecalho__logo">
-                            <img src="./assets/icons/logo.svg" alt="logo da use dev">
+                            <img class="logo__imagem" src="./assets/icons/logo.svg" alt="logo da use dev">
                         </h1>
                     </li>
                     <li class="cabecalho__nav_list_item cabecalho__nav_list_item-sobre">
@@ -67,6 +68,249 @@
                 <button class="banner__container-botao">Ver as novidades</button>
             </div>
         </section>
+        <section class="categorias">
+            <h3 class="categorias__titulo">
+                categorias
+            </h3>
+            <p class="categorias__texto">
+                De roupas a gadgets tecnológicos temos tudo para atender suas paixões e hobbies com estilo e autenticidade.
+            </p>
+            <ul class="categorias__lista">
+                <li class="categorias__lista_item categorias__lista_item-roupas">
+                    <div class="categorias__lista_item_container">
+                        <img class="categorias__imagem" src="./assets/roupas.png" alt="Roupas">
+                    </div>
+                    <h4 class="categorias__lista_item_titulo">
+                        Roupas
+                    </h4>
+                </li>
+                <li class="categorias__lista_item categorias__lista_item-decoracao">
+                    <div class="categorias__lista_item_container">
+                        <img src="./assets/decoracao.png" alt="decoração">
+                    </div>
+                    <h4 class="categorias__lista_item_titulo">
+                        Decoração
+                    </h4>
+                </li>
+                <li class="categorias__lista_item categorias__lista_item-canecas">
+                    <div class="categorias__lista_item_container">
+                        <img src="./assets/canecas.png" alt="canecas">
+                    </div>
+                    <h4 class="categorias__lista_item_titulo">
+                        canecas
+                    </h4>
+                </li>
+                <li class="categorias__lista_item categorias__lista_item-acessorios">
+                    <div class="categorias__lista_item_container">
+                        <img src="./assets/acessorios.png" alt="acessórios">
+                    </div>
+                    <h4 class="categorias__lista_item_titulo">
+                        Acessórios
+                    </h4>
+                </li>
+            </ul>
+        </section>
+        <section class="promocoes">
+            <h3 class="promocoes__titulo">
+                Promos especiais
+            </h3>
+            <ul class="promocoes__lista">
+                <li class="promocoes__lista_item">
+                    <img src="./assets/produtos/abridor.png" alt="abridor de garrafas">
+                    <div class="promoces__lista_item_descricao">
+                        <h4>Abridor</h4>
+                        <p>29,90</p>
+                    </div>
+                </li>
+                <li class="promocoes__lista_item">
+                    <img src="./assets/produtos/mousepad.png" alt="mousepad">
+                    <div class="promoces__lista_item_descricao">
+                        <h4>Mousepad Café</h4>
+                        <p>18,00</p>
+                    </div>
+                </li>
+                <li class="promocoes__lista_item">
+                    <img src="./assets/produtos/caneca.png" alt="Caneca Bug">
+                    <div class="promoces__lista_item_descricao">
+                        <h4>Caneca Bug</h4>
+                        <p>28,00</p>
+                    </div>
+                </li>
+                <li class="promocoes__lista_item">
+                    <img src="./assets/produtos/quadro.png" alt="Quadro while">
+                    <div class="promoces__lista_item_descricao">
+                        <h4>Quadro While</h4>
+                        <p>22,00</p>
+                    </div>
+                </li>
+                <li class="promocoes__lista_item">
+                    <img src="./assets/produtos/copo.png" alt="Copo vida de dev">
+                    <div class="promoces__lista_item_descricao">
+                        <h4>Copo Vida de Dev</h4>
+                        <p>28,00</p>
+                    </div>
+                </li>
+                <li class="promocoes__lista_item">
+                    <img src="./assets/produtos/boné.png" alt="Boné 404">
+                    <div class="promoces__lista_item_descricao">
+                        <h4>Boné 404</h4>
+                        <p>25,00</p>
+                    </div>
+                </li>
+                <li class="promocoes__lista_item">
+                    <img src="./assets/produtos/camiseta.png" alt="Camiseta Estágios">
+                    <div class="promoces__lista_item_descricao">
+                        <h4>Camiseta Estágios</h4>
+                        <p>35,00</p>
+                    </div>
+                </li>
+            </ul>
+            <a href="#" class="promocoes__link">Ver mais</a>
+        </section>
+
+        <section class="newsletter">
+            <h4 class="newsletter__titulo">
+                Inscreva-se para ganhar descontos!
+            </h4>
+            <p class="newsletter__texto">
+                Cadastre seu email, receba novidades e descontos imperdíveis antes de todo mundo!
+            </p>
+            <div class="newsletter__email">
+                <input type="email" id="email" placeholder="Digite seu melhor endereço de email" class="newsletter__input">
+            <button class="newsletter__botao">
+                Inscrever
+            </button>
+            </div>
+        </section>
+        <footer class="rodape">
+              <div class="rodape__linha">
+                <div class="rodape__coluna rodape_coluna_logo">
+                    <img src="./assets/icons/logo-verde.svg" alt="UseDev logo">
+                    <p class="rodape__coluna_logo_texto">
+                        Hora de abraçar seu lado geek
+                    </p>
+                </div>
+                <div class="rodape__coluna">
+                    <h4 class="rodape__coluna_titulo">
+                        Funcionamento
+                    </h4>
+                    <ul class="rodape__coluna_lista">
+                        <li class="rodape__coluna_Lista_item">
+                            Segunda a Sexta - 8 as 18h
+                        </li>
+                        <li class="rodape__colula_lista_item">
+                            <a href="mailto:sac@usedev.com" class="rodape__coluna_link">
+                                sac@usedev.com
+                            </a>
+                        </li>
+                        <li class="rodape__colula_lista_item">
+                            <a href="tel:+550800541320" class="rodape__coluna_link">
+                                0800 541 320
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rodape__coluna">
+                    <h5 class="rodape__coluna_titulo">
+                        Institucional
+                    </h5>
+                    <nav class="rodape__coluna_nav">
+                        <ul class="rodape__coluna_lista">
+                            <li class="rodape__colula_lista_item">
+                                <a href="#" class="rodape__coluna_link">
+                                    Sobre nós
+                                </a>
+                            </li>
+                            <li class="rodape__colula_lista_item">
+                                <a href="#" class="rodape__coluna_link">
+                                    Contato
+                                </a>
+                            </li>
+                            <li class="rodape__colula_lista_item">
+                                <a href="#" class="rodape__coluna_link">
+                                    Politica de privacidade
+                                </a>
+                            </li>
+                            <li class="rodape__colula_lista_item">
+                                <a href="#" class="rodape__coluna_link">
+                                    LGPD - Lei de proteção de dados
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="rodape__coluna">
+                    <h5 class="rodape__coluna_titulo">
+                        Institucional
+                    </h5>
+                    <nav class="rodape__coluna_nav">
+                        <ul class="rodape__coluna_lista">
+                            <li class="rodape__colula_lista_item">
+                                <a href="#" class="rodape__coluna_link">
+                                    Entregas
+                                </a>
+                            </li>
+                            <li class="rodape__colula_lista_item">
+                                <a href="#" class="rodape__coluna_link">
+                                    Garantia
+                                </a>
+                            </li>
+                            <li class="rodape__colula_lista_item">
+                                <a href="#" class="rodape__coluna_link">
+                                    Trocas de devoluções
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+              </div>
+              <div class="rodape__linha">
+                <div class="rodape__coluna">
+                    <h5 class="rodape__coluna_titulo">
+                        Formas de pagamento
+                    </h5>
+                    <ul class="rodape__coluna_lista-cartao">
+                        <li class="rodape__coluna_lista-item-cartao">
+                            <img src="./assets/icons/icon-cartao-visa.svg" alt="Visa">
+                        </li>
+                        <li class="rodape__coluna_lista-item-cartao">
+                            <img src="./assets/icons/icon-cartao-master.svg" alt="Mastercard">
+                        </li>
+                        <li class="rodape__coluna_lista-item-cartao">
+                            <img src="./assets/icons/icon-cartao-elo.svg" alt="Elo">
+                        </li>
+                        <li class="rodape__coluna_lista-item-cartao">
+                            <img src="./assets/icons/icon-cartao-diners.svg" alt="Diners">
+                        </li>
+                        <li class="rodape__coluna_lista-item-cartao">
+                            <img src="./assets/icons/icon-pix.svg" alt="Pix">
+                        </li>
+                    </ul>
+                </div>
+                <div class="rodape__coluna">
+                    <h5 class="rodape__coluna_titulo">
+                        Siga nossas redes
+                    </h5>
+                    <ul class="rodape__coluna_lista-redes-sociais">
+                        <li class="rodape__coluna_lista_item-redes-sociais">
+                            <a href="#">
+                                <img src="./assets/icons/whatsapp.svg" alt="Whatsapp">
+                            </a>
+                        </li>
+                        <li class="rodape__coluna_lista_item-redes-sociais">
+                            <a href="#">
+                                <img src="./assets/icons/instagram.svg" alt="Instagram">
+                            </a>
+                        </li>
+                        <li class="rodape__coluna_lista_item-redes-sociais">
+                            <a href="#">
+                                <img src="./assets/icons/tiktok.svg" alt="Tiktok">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+        </footer>
     
     </main>
 </body>
