@@ -78,6 +78,15 @@
     list-style-type: none;
 }
 
+.rodape__paragrafofinal {
+    color: var(--color-titulo);
+    font-family: var(--fonte-texto);
+    background-color: var(--cor-texto);
+    font-size: 13px;
+    text-align: center;
+    padding: 20px;
+}
+
 @media screen and (max-width: 768px) {
     .rodape__linha:first-child {
         display: grid;
@@ -117,6 +126,14 @@
 }
 
 @media screen and (max-width:390px) {
-
+    .rodape__linha:first-child {
+        display: flex;
+        flex-direction: column;
+    }
     
+    .rodape__linha:last-child {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
 }
